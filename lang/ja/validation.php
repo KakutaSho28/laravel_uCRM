@@ -111,5 +111,8 @@ return [
         ],
     ],
 
-    'attributes' => [],
+    'attributes' => [
+        'title' => 'タイトル',
+        'content' => '件名',
+    ],
 ];
