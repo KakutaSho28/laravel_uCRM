@@ -114,5 +114,8 @@ return [
     'attributes' => [
         'title' => 'タイトル',
         'content' => '件名',
+        'name' => '商品名',
+        'memo' => 'メモ',
+        'price' => '価格',
     ],
 ];

@@ -11,9 +11,9 @@ class StoreItemRequest extends FormRequest
      *
      * @return bool
      */
-    public function authorize()
+    public function authorize() // falseのままだとユーザーがリクエストを実行する権限が与えられないので、trueに変更する。
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,9 @@ class StoreItemRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'name' => ['required','max:255'],
+            'memo' => ['required','max:255'],
+            'price' => ['required','numeric'],
         ];
     }
 }
