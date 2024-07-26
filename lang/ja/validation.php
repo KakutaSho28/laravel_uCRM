@@ -117,5 +117,12 @@ return [
         'name' => '商品名',
         'memo' => 'メモ',
         'price' => '価格',
+        'kana' => 'カナ',
+        'tel' => '電話番号',
+        'email' => 'メールアドレス',
+        'postcode' => '郵便番号',
+        'address' => '住所',
+        'birthday' => '生年月日',
+        'gender' => '性別',
     ],
 ];
