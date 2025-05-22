@@ -1,20 +1,7 @@
 <?php
 
 return [
-
-    /*
-    |--------------------------------------------------------------------------
-    | 認証に関する言語ライン
-    |--------------------------------------------------------------------------
-    |
-    | 以下の言語行は、ユーザー認証の際に表示される様々なメッセージを
-    | 含んでいます。必要に応じてアプリケーションの要件に合わせて
-    | 自由に変更してください。
-    |
-    */
-
-    'failed' => '認証情報が登録されていません。',
-    'password' => 'パスワードが正しくありません。',
-    'throttle' => 'ログイン試行が多すぎます。:seconds秒後に再試行してください。',
-
+    'failed' => 'These credentials do not match our records.',
+    'password' => 'The provided password is incorrect.',
+    'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',
 ];

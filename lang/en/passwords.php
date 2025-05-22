@@ -1,21 +1,9 @@
 <?php
 
 return [
-
-    /*
-    |--------------------------------------------------------------------------
-    | パスワードリセットに関する言語ライン
-    |--------------------------------------------------------------------------
-    |
-    | 以下の言語行は、パスワードリセットが試みられた際に、
-    | パスワードブローカーが提供するメッセージを含んでいます。
-    |
-    */
-
-    'reset' => 'パスワードをリセットしました！',
-    'sent' => 'パスワードリセットリンクをメールしました！',
-    'throttled' => '少し待ってから再試行してください。',
-    'token' => 'このパスワードリセットトークンは無効です。',
-    'user' => "入力されたメールアドレスのユーザーが見つかりません。",
-
+    'reset' => 'Your password has been reset!',
+    'sent' => 'We have emailed your password reset link!',
+    'throttled' => 'Please wait before retrying.',
+    'token' => 'This password reset token is invalid.',
+    'user' => "We can't find a user with that email address.",
 ];
