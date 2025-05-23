@@ -5,6 +5,7 @@ use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 use App\Http\Controllers\InertiaTestController;
+use App\Http\Controllers\OutputTestController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,6 +25,7 @@ Route::get(
         return Inertia::render('InertiaTest');
     }
 );
+
 Route::get(
     '/component-test',
     function () {
@@ -31,12 +33,23 @@ Route::get(
     }
 );
 
-
 Route::get('/inertia/index', [InertiaTestController::class, 'index'])->name('inertia.index');
 Route::post('/inertia', [InertiaTestController::class, 'store'])->name('inertia.store');
 Route::get('/inertia/show/{id}', [InertiaTestController::class, 'show'])->name('inertia.show');
 Route::get('/inertia/create', [InertiaTestController::class,'create'])->name('inertia.create');
 Route::delete('/inertia/{id}', [InertiaTestController::class, 'delete'])->name('inertia.delete');
+
+
+Route::get(
+    '/output-test',
+    function () {
+        return Inertia::render('OutputTest');
+    }
+);
+Route::get('/output/index', [OutputTestController::class, 'index'])->name('output.index');
+Route::get('/output/show/{id}', [OutputTestController::class, 'show'])->name('output.show');
+
+
 
 Route::get('/', function () {
     return Inertia::render('Welcome', [
