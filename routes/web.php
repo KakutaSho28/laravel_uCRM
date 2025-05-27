@@ -47,7 +47,9 @@ Route::get(
     }
 );
 Route::get('/output/index', [OutputTestController::class, 'index'])->name('output.index');
+Route::get('/output/create', [OutputTestController::class, 'create'])->name('output.create');
 Route::get('/output/show/{id}', [OutputTestController::class, 'show'])->name('output.show');
+Route::post('/output', [OutputTestController::class, 'store'])->name('output.store');
 
 
 
